@@ -12,8 +12,8 @@ jobs:
    
     - name: Set SSH Key
       env: 
-        SSH_KEY: ${{ secrets.GITEE_SSH_KEY }}
-        SSH_KEY_PUB: ${{ secrets.GITEE_SSH_PUB }}
+        SSH_KEY: ${{ secrets.GITEE_BlogImage_SSH_KEY }}
+        SSH_KEY_PUB: ${{ secrets.GITEE_BlogImage_SSH_PUB }}
       run: |
         mkdir -p ~/.ssh
         ssh-keyscan -H gitee.com >> ~/.ssh/known_hosts
